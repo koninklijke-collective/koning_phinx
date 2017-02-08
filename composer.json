@@ -1,0 +1,35 @@
+{
+    "name": "koninklijke-collective/koning-phinx",
+    "description": "TYPO3 Extension: Phinx Integration - Phinx.org integration for Database Migrations",
+    "type": "typo3-cms-extension",
+
+    "keywords": [
+        "TYPO3",
+        "CMS",
+        "Koning",
+        "Phinx"
+    ],
+    "homepage": "https://github.com/koninklijke-collective/koning_phinx",
+    "license": "LGPL-3.0+",
+
+    "autoload": {
+        "psr-4": {
+            "KoninklijkeCollective\\KoningPhinx\\": "Classes/"
+        }
+    },
+
+    "version": "1.0.0",
+
+    "require": {
+        "typo3/cms-core": ">=7.6.0,<9.0",
+        "robmorgan/phinx": "^0.6.5"
+    },
+
+    "authors": [
+        {
+            "name": "Benjamin Serfhos",
+            "email": "benjamin@serfhos.com",
+            "homepage": "http://serfhos.com"
+        }
+    ]
+}
