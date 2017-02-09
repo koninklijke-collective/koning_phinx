@@ -9,7 +9,6 @@ Howto
 Configure the extension as you would like; like example below:
  
 ```php
-    <?php
     $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['koning_phinx'] = [
         // Define paths outside PATH_site root
         'path_migrations' => '../database/migrations',
