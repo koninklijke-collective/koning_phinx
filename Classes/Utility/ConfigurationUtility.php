@@ -41,7 +41,7 @@ class ConfigurationUtility
     protected static function getExtensionDatabasePaths($migrations = [], $seeds = [])
     {
         foreach (ExtensionManagementUtility::getLoadedExtensionListArray() as $extension) {
-            $extensionPath = ExtensionManagementUtility::extPath($extension) . 'Database/';
+            $extensionPath = ExtensionManagementUtility::extPath($extension) . 'Phinx/';
             if (is_dir($extensionPath . 'Migrations')) {
                 $migrations[] = $extensionPath . 'Migrations';
             }

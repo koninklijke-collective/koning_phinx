@@ -28,4 +28,18 @@ class PhinxInput extends \Symfony\Component\Console\Input\ArgvInput
                 return parent::getOption($name);
         }
     }
+
+    /**
+     * @return string
+     * @throws \InvalidArgumentException
+     */
+    public function getFirstArgument() {
+        $firstArgument = parent::getFirstArgument();
+
+        if ($firstArgument === 'init') {
+            throw new \InvalidArgumentException('Init is stopped due to invoke via TYPO3, configure via ExtensionManager.', 1486632696779);
+        }
+
+        return $firstArgument;
+    }
 }

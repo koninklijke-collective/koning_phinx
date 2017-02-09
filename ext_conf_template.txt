@@ -7,5 +7,5 @@ path_migrations =
 # cat=basic/enable; type=string; label=Path to seed files:Optional. When left empty, PATH_site . 'Database/Seeds' is used. Can be relative to PATH_site.
 path_seeds =
 
-# cat=basic/enable; type=boolean; label=Enable extension migrations/seeds:Careful, this enables extension migrations! All enabled extensions with EXT:extension/Database/{Migrations,Seeds} directories.
+# cat=basic/enable; type=boolean; label=Enable extension migrations/seeds:Careful, this enables extension migrations! All enabled extensions with EXT:extension/Phinx/{Migrations,Seeds} directories.
 include_extension_directories = 0
